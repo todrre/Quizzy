@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quizzy</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Quizzy</h1>
+
+      <section class="stats">
+        <div><strong>Streak:</strong> <span id="streak">0</span></div>
+        <div><strong>Global best:</strong> <span id="globalBest">0</span></div>
+      </section>
+
+      <section class="card">
+        <div id="status" class="status"></div>
+        <div id="prompt" class="prompt">Laddar fråga…</div>
+        <div id="choices" class="choices"></div>
+      </section>
+
+      <section class="footer">
+        <button id="nextBtn" class="secondary" type="button">Ny fråga</button>
+      </section>
+    </main>
+
+    <script src="/static/quiz.js"></script>
+  </body>
+</html>
